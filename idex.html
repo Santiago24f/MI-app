@@ -5,6 +5,7 @@
     <meta charset="UTF-8"> <!--caracteres especiales-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>MI primera pagina web </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1> Hola, Buenos dias </h1>
@@ -124,7 +125,7 @@
             </tr>
             <tr>
                 <td>git add</td>
-                <td>Agrega cambios al "staging"</td>
+                <td>Agrega cambios al "staging</td>
             </tr>
             <tr>
                 <td>git push</td>
@@ -134,6 +135,68 @@
         </tbody>
         </table>
 
+    </section>
+    <section class="card" id="Formularios">
+        <h2>5) Formularios</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <fieldset>Datos Basicos</fieldset>
+                <label>
+                    Nombre
+                    <input type="text" name="Nombre" placeholder="Tu nombre" required>
+                </label>
+                <label>
+                    email
+                    <input type="email" name="email" placeholder="Ingresa tu correo" required>
+                </label>
+                <label>
+                    Pasaword
+                    <input type="password" minlength="6">
+                </label>
+                <label>
+                    Fecha
+                    <input type="date" name="Fecha">
+                </label>
+                <label>
+                    Color
+                    <input type="color" name="color">
+                </label>
+                <label>
+                    Rango
+                    <input type="range" name="Rango" min="0" max="100">
+                </label>
+                <label>
+                    archivos
+                    <input type="file" name="archivo">
+                </label>
+                <label>
+                    Seleccion
+                    <select name="opcion" >
+                        <option value="">Elige una</option>
+                        <option>HTML</option>
+                        <option >css</option>
+                        <option >Git</option>
+                    </select>
+                </label>
+                <label>
+                    comentarios
+                    <textarea name="comentarios" rows="4" placeholder="Escribe algo"></textarea>
+                </label>
+                <div class="inline">
+                    <label><input type="radio" name="nivel" value="basico">Basico</label>
+                    <label><input type="radio" name="nivel" value="pro">Pro</label>
+                </div>
+                <div class="inline">
+                    <label><input type="checkbox" name="ok">Acepto terminos</label>
+
+                </div>
+                <div class="actions">
+                    <button class="btn" type="submit">Enviar</button>
+                    <button class="btn ghost" type="reset">Limpiar</button>
+                </div>
+                
+            </fieldset>
+        </form>
     </section>
 
 
